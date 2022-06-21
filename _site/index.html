@@ -106,7 +106,7 @@
             </li>
             
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/blog.html">Blog</a>
+                <a class="nav-link" aria-current="page" href="/projects.html">Projects</a>
             </li>
             
             <li class="nav-item">
@@ -115,11 +115,14 @@
             
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDarkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+                Blog
               </a>
-              <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDarkDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="offcanvasNavbarDarkDropdown">
+                <li><a class="dropdown-item" href="#">API</a></li>
+                <li><a class="dropdown-item" href="#">AWS</a></li>
+                <li><a class="dropdown-item" href="#">Front-End</a></li>
+                <li><a class="dropdown-item" href="#">Java</a></li>
+                <li><a class="dropdown-item" href="#">Back-End</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -199,7 +202,85 @@
       <h3 class="pb-4 mb-4 fst-italic border-bottom">
         Latest Posts
       </h3>
-      <h1>hello world!</h1>
+      
+<article class="blog-post">
+  <h2 class="blog-post-title mb-1"><a href="/aws/2019/08/20/sample-post.html">Sample post</a></h2>
+  <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+  <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    &lt;hr&gt;
+    &lt;p&gt;This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.&lt;/p&gt;
+    &lt;h2&gt;Blockquotes&lt;/h2&gt;
+    &lt;p&gt;This is an example blockquote in action:&lt;/p&gt;
+    &lt;blockquote class="blockquote"&gt;
+      &lt;p&gt;Quoted text goes here.&lt;/p&gt;
+    &lt;/blockquote&gt;
+    &lt;p&gt;This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.&lt;/p&gt;
+    &lt;h3&gt;Example lists&lt;/h3&gt;
+    &lt;p&gt;This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;First list item&lt;/li&gt;
+      &lt;li&gt;Second list item with a longer description&lt;/li&gt;
+      &lt;li&gt;Third list item to close it out&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;And this is an ordered list:&lt;/p&gt;
+    &lt;ol&gt;
+      &lt;li&gt;First list item&lt;/li&gt;
+      &lt;li&gt;Second list item with a longer description&lt;/li&gt;
+      &lt;li&gt;Third list item to close it out&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;p&gt;And this is a definition list:&lt;/p&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;HyperText Markup Language (HTML)&lt;/dt&gt;
+      &lt;dd&gt;The language used to describe and define the content of a Web page&lt;/dd&gt;
+      &lt;dt&gt;Cascading Style Sheets (CSS)&lt;/dt&gt;
+      &lt;dd&gt;Used to describe the appearance of Web content&lt;/dd&gt;
+      &lt;dt&gt;JavaScript (JS)&lt;/dt&gt;
+      &lt;dd&gt;The programming language used to build advanced Web sites and applications&lt;/dd&gt;
+    &lt;/dl&gt;
+    &lt;h2&gt;Inline HTML elements&lt;/h2&gt;
+    &lt;p&gt;HTML defines a long list of available inline tags, a complete list of which can be found on the &lt;a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"&gt;Mozilla Developer Network&lt;/a&gt;.&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;To bold text&lt;/strong&gt;, use &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+      &lt;li&gt;&lt;em&gt;To italicize text&lt;/em&gt;, use &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;em&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+      &lt;li&gt;Abbreviations, like &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt; should use &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;abbr&amp;gt;&lt;/code&gt;, with an optional &lt;code class="language-plaintext highlighter-rouge"&gt;title&lt;/code&gt; attribute for the full phrase.&lt;/li&gt;
+      &lt;li&gt;Citations, like &lt;cite&gt;— Mark Otto&lt;/cite&gt;, should use &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;cite&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+      &lt;li&gt;&lt;del&gt;Deleted&lt;/del&gt; text should use &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;del&amp;gt;&lt;/code&gt; and &lt;ins&gt;inserted&lt;/ins&gt; text should use &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;ins&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+      &lt;li&gt;Superscript &lt;sup&gt;text&lt;/sup&gt; uses &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;sup&amp;gt;&lt;/code&gt; and subscript &lt;sub&gt;text&lt;/sub&gt; uses &lt;code class="language-plaintext highlighter-rouge"&gt;&amp;lt;sub&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;Most of these elements are styled by browsers with few modifications on our part.&lt;/p&gt;
+    &lt;h2&gt;Heading&lt;/h2&gt;
+    &lt;p&gt;This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.&lt;/p&gt;
+    &lt;h3&gt;Sub-heading&lt;/h3&gt;
+    &lt;p&gt;This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.&lt;/p&gt;
+    &lt;pre&gt;&lt;code&gt;Example code block&lt;/code&gt;&lt;/pre&gt;
+    &lt;p&gt;This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.&lt;/p&gt;
+</code></pre></div></div>
+
+</article>
+
+<article class="blog-post">
+  <h2 class="blog-post-title mb-1"><a href="/2018/08/22/kiwifruit.html">Kiwifruit</a></h2>
+  <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+  <p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
+berry of several species of woody vines in the genus Actinidia.</p>
+
+</article>
+
+<article class="blog-post">
+  <h2 class="blog-post-title mb-1"><a href="/2018/08/21/apples.html">Apples</a></h2>
+  <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+  <p>An apple is a sweet, edible fruit produced by an apple tree.</p>
+
+</article>
+
+<article class="blog-post">
+  <h2 class="blog-post-title mb-1"><a href="/2018/08/20/bananas.html">Bananas</a></h2>
+  <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
+  <p>A banana is an edible fruit – botanically a berry – produced by several kinds
+of large herbaceous flowering plants in the genus Musa.</p>
+
+</article>
+
 
       
 

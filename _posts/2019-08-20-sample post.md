@@ -1,6 +1,7 @@
 ---
 author: jill
 category: aws
+date: 2019-08-20
 ---
    <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
         <hr>

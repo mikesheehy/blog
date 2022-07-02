@@ -1,0 +1,14 @@
+---
+layout: category
+title: AWS Blog Posts
+header: AWS
+---
+
+{% assign filtered_posts = site.posts | where: 'category', 'aws' %}
+  {% for post in filtered_posts %}
+<article class="blog-post">
+  <h2 class="blog-post-title mb-1"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <p class="blog-post-meta">{{ page.date | date_to_string }} by <a href="#">Mark</a></p>
+  {{ post.excerpt }}
+</article>
+{% endfor %}

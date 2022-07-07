@@ -1,10 +1,10 @@
 ---
 layout: category
-title: API Blog Posts
-header: API
+title: Java Blog Posts
+header: Java
 ---
 
-{% assign filtered_posts = site.posts | where: 'category', 'api' %}
+{% assign filtered_posts = site.posts | where: 'category', 'java' %}
   {% for post in filtered_posts %}
 <article class="blog-post">
   <h2 class="blog-post-title mb-1"><a href="{{ post.url }}">{{ post.title }}</a></h2>

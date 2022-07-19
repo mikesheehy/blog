@@ -4,7 +4,7 @@ title: Front-End Blog Posts
 header: Front-End
 ---
 
-{% assign filtered_posts = site.posts | where: 'category', 'frontend' %}
+{% assign filtered_posts = site.posts | where: 'category', 'front-end' %}
   {% for post in filtered_posts %}
 <article class="blog-post">
   <h2 class="blog-post-title mb-1"><a href="{{ post.url }}">{{ post.title }}</a></h2>

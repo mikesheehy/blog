@@ -165,6 +165,14 @@
             <li><a href="#">Facebook</a></li>
           </ol>
         </div>
+
+        {% for post in site.posts %}
+<article class="blog-post">
+  <h2 class="blog-post-title mb-1"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <p class="blog-post-meta">{{ post.date | date_to_string }} by {{post.author}} -- <a href="/{{post.category}}.html">{{post.category}}</a></p>
+  {{ post.excerpt }}
+</article>
+{% endfor %}
       </div>
     </div>
   </div>

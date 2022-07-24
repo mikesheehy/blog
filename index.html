@@ -3,10 +3,23 @@ layout: blog
 title: Home
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <article class="blog-post">
   <h2 class="blog-post-title mb-1"><a href="{{ post.url }}">{{ post.title }}</a></h2>
   <p class="blog-post-meta">{{ post.date | date_to_string }} by {{post.author}} -- <a href="/{{post.category}}.html">{{post.category}}</a></p>
   {{ post.excerpt }}
 </article>
 {% endfor %}
+
+<nav class="blog-pagination" aria-label="Pagination">
+  {% if paginator.next_page %}
+    <a class="btn btn-outline-primary rounded-pill" href="{{ paginator.next_page_path }}">Newer</a>
+    {% else %}
+    <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
+  {% endif %}  
+  {% if paginator.previous_page %}
+    <a class="btn btn-outline-primary rounded-pill" href="{{ paginator.previous_page_path }}">Older</a>
+    {% else %}
+    <a class="btn btn-outline-secondary rounded-pill disabled">Older</a>
+  {% endif %}
+  </nav>

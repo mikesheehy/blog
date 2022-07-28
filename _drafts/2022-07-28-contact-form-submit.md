@@ -1,17 +1,9 @@
 ---
-layout: category
-title: Front-End Blog Posts
-header: Front-End
+author: Mike
+category: codeky
 ---
 
-{% assign filtered_posts = site.posts | where: 'category', 'front-end' %}
-  {% for post in filtered_posts %}
-<article class="blog-post">
-  <h2 class="blog-post-title mb-1"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p class="blog-post-meta">{{ page.date | date_to_string }} by {{post.author}}</p>
-  {{ post.excerpt }}
-</article>
-{% endfor %}
+An item that frustrates Code Kentucky students is the JavaScript requirement, specifically the contact form. We ask for the form to have some form of validation, and then we want the submit button to pass an input field.
 
 <form>
   <div>

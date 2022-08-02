@@ -12,6 +12,7 @@ An item that frustrates Code Kentucky students is the JavaScript requirement, sp
   <div>
     <input type="email" id="email" placeholder="Email Address" required>
   </div>
+  <div>
     <button id="contactButton" onclick="concat()">Contact for Booking!!</button>
   </div>
 </form>

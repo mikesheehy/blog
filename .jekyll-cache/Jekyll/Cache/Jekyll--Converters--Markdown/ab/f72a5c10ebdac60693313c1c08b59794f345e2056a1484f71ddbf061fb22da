@@ -1,0 +1,46 @@
+I"ê<p>An item that frustrates Code Kentucky students is the JavaScript requirement, specifically the contact form. We ask for the form to have some form of validation, and then we want the submit button to pass an input field.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;form&gt;
+  &lt;div&gt;
+    &lt;input type="text" id="name" placeholder='First Name' required&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;input type="email" id="email" placeholder="Email Address" required&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;button id="contactButton" onclick="concat()"&gt;Contact for Booking!!&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+
+&lt;script&gt;
+    function concat() {
+    var nameInput = document.getElementById('name').value;
+  var confirm = 'Thank you, ' + nameInput + '!';
+  alert(confirm);
+}
+&lt;/script&gt;
+</code></pre></div></div>
+
+<p>You can check out the code in action here:</p>
+
+<form>
+  <div>
+    <input type="text" id="name" placeholder="First Name" required="" />
+  </div>
+  <div>
+    <input type="email" id="email" placeholder="Email Address" required="" />
+  </div>
+  <div>
+    <button id="contactButton" onclick="concat()">Contact for Booking!!</button>
+  </div>
+</form>
+
+<script>
+    function concat() {
+    var nameInput = document.getElementById('name').value;
+  var confirm = 'Thank you, ' + nameInput + '!';
+  alert(confirm);
+}
+</script>
+
+:ET

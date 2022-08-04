@@ -1,0 +1,46 @@
+I"<p>An item that frustrates Code Kentucky students is the JavaScript requirement, specifically the contact form. We ask for the form to have some form of validation, and then we want the submit button to pass an input field.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"name"</span> <span class="na">placeholder=</span><span class="s">'First Name'</span> <span class="na">required</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">id=</span><span class="s">"email"</span> <span class="na">placeholder=</span><span class="s">"Email Address"</span> <span class="na">required</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"contactButton"</span> <span class="na">onclick=</span><span class="s">"concat()"</span><span class="nt">&gt;</span>Contact for Booking!!<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+
+<span class="nt">&lt;script&gt;</span>
+    <span class="kd">function</span> <span class="nx">concat</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">nameInput</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">).</span><span class="nx">value</span><span class="p">;</span>
+  <span class="kd">var</span> <span class="nx">confirm</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Thank you, </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">nameInput</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">!</span><span class="dl">'</span><span class="p">;</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="nx">confirm</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>You can check out the code in action here:</p>
+
+<form>
+  <div>
+    <input type="text" id="name" placeholder="First Name" required="" />
+  </div>
+  <div>
+    <input type="email" id="email" placeholder="Email Address" required="" />
+  </div>
+  <div>
+    <button id="contactButton" onclick="concat()">Contact for Booking!!</button>
+  </div>
+</form>
+
+<script>
+    function concat() {
+    var nameInput = document.getElementById('name').value;
+  var confirm = 'Thank you, ' + nameInput + '!';
+  alert(confirm);
+}
+</script>
+
+:ET

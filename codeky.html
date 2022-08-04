@@ -1,0 +1,15 @@
+---
+layout: category
+title: Code Kentucky Blog Posts
+metadesc: Blog posts about Code Kentucky written by Mike Sheehy
+header: Code Kentucky
+---
+
+{% assign filtered_posts = site.posts | where: 'category', 'codeky' %}
+  {% for post in filtered_posts %}
+<article class="blog-post">
+  <h2 class="blog-post-title mb-1"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <p class="blog-post-meta">{{ post.date | date_to_string}} by {{post.author}}</p>
+  {{ post.excerpt }}
+</article>
+{% endfor %}

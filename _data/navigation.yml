@@ -4,5 +4,9 @@
   link: /about.html
 - name: Projects
   link: /projects.html
+- name: Code KY
+  link: /codeky.html
+- name: AWS
+  link: /aws.html
 - name: Staff
   link: /staff.html

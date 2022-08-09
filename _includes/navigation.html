@@ -16,18 +16,6 @@
                 <a {% if page.url == item.link %}class="nav-link active"{% else %}class="nav-link"{% endif %} aria-current="page" href="{{ item.link }}">{{ item.name }}</a>
             </li>
             {% endfor %}
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDarkDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Blog
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="offcanvasNavbarDarkDropdown">
-                <li><a class="dropdown-item" href="api.html">API</a></li>
-                <li><a class="dropdown-item" href="aws.html">AWS</a></li>
-                <li><a class="dropdown-item" href="frontend.html">Front-End</a></li>
-                <li><a class="dropdown-item" href="java.html">Java</a></li>
-                <li><a class="dropdown-item" href="backend.html">Back-End</a></li>
-              </ul>
-            </li>
           </ul>
         </div>
       </div>

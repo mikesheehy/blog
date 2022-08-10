@@ -1,0 +1,13 @@
+{% if post.category == "codeky" %}
+    <a href="/{{post.category}}.html">Code Kentucky</a>
+{% elsif post.category == "aws" %}
+    <a href="/{{post.category}}.html">AWS</a>
+{% elsif post.category == "api" %}
+    <a href="/projects.html">API</a>
+{% elsif post.category == "java" %}
+    <a href="/projects.html">Java</a>
+{% elsif post.category == "front-end" %}
+    <a href="/projects.html">Front-End</a>
+{% elsif post.category == "back-end" %}
+    <a href="/projects.html">Back-End</a>
+{% endif %}

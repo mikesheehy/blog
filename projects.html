@@ -4,11 +4,22 @@ title: Front-End and Back-End Blog Posts
 header: Projects
 ---
 
-{% assign filtered_posts = site.posts | where: 'category', 'projects' %}
-  {% for post in filtered_posts %}
-<article class="blog-post">
-  <h2 class="blog-post-title mb-1"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p class="blog-post-meta">{{ page.date | date_to_string }} by {{post.author}}</p>
-  {{ post.excerpt }}
-</article>
+{% for post in site.posts %}
+  {% if post.category == "java" or post.category == "front-end" or post.category == "back-end" or post.category == "api"%}
+  <article class="blog-post">
+    <h2 class="blog-post-title mb-1"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p class="blog-post-meta">
+    {% if post.category == "api" %}
+    <a href="/{{post.category}}.html">API</a>
+    {% elsif post.category == "java" %}
+    <a href="/{{post.category}}.html">Java</a>
+    {% elsif post.category == "front-end" %}
+    <a href="/{{post.category}}.html">Front-End</a>
+    {% elsif post.category == "back-end" %}
+    <a href="/{{post.category}}.html">Back-End</a>
+    {% endif %} / 
+    {{ post.date | date_to_string }}</p>
+    {{ post.excerpt }}
+  </article>
+  {% endif %}
 {% endfor %}

@@ -4,11 +4,19 @@ layout: default
 <h1>{{ page.title }}</h1>
 
 <p>
-  {{ page.date | date_to_string }}
-  {% assign author = site.authors | where: 'short_name', page.author | first %}
-  {% if author %}
-    - <a href="{{ author.url }}">{{ author.name }}</a>
-  {% endif %}
+  {% if page.category == "codeky" %}
+    <a href="/{{page.category}}.html">Code Kentucky</a>
+  {% elsif page.category == "aws" %}
+    <a href="/{{page.category}}.html">AWS</a>
+  {% elsif page.category == "api" %}
+    <a href="/projects.html">API</a>
+  {% elsif page.category == "java" %}
+    <a href="/projects.html">Java</a>
+  {% elsif page.category == "front-end" %}
+    <a href="/projects.html">Front-End</a>
+  {% elsif page.category == "back-end" %}
+    <a href="/projects.html">Back-End</a>
+{% endif %} / {{ page.date | date_to_string }}
 </p>
 
 {{ content }}

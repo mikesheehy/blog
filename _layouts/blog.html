@@ -93,7 +93,7 @@
       {% for post in site.posts limit:1 %}
       <h1 class="display-4 fst-italic">{{ post.title | capitalize_all }}</h1>
       <p class="lead my-3">{{ post.excerpt }}</p>
-      <p class="lead mb-0"><a href="{{ post.url }}" class="text-white fw-bold">Continue reading...</a></p>
+      <p class="lead mb-0"><a href="{{ post.url }}" class="text-white fw-bold">Continue reading featured post...</a></p>
       {% endfor %}
     </div>
   </div>

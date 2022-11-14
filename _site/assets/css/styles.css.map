@@ -7,8 +7,8 @@
 	],
 	"sourcesContent": [
 		"@import \"main\";",
-		".current {\r\n    color: green;\r\n  }\r\n\r\n  /*.navbar{\r\n    background-color: #31fcab;\r\n  }*/\r\n  $primary: #31fcab;\r\n  $danger: #ff4136;"
+		".current {\r\n    color: green;\r\n  }\r\n\r\n  /*.navbar{\r\n    background-color: #31fcab;\r\n  }*/\r\n\r\n  .highlight{\r\n    background-color: aliceblue;\r\n  }\r\n\r\n  .hero-image{\r\n    background-image: url(https://pbs.twimg.com/list_banner_img/1562075351211249664/gOmRrYC6?format=jpg&name=large);\r\n    background-position: right;\r\n  }\r\n\r\n  $primary: #31fcab;\r\n  $danger: #ff4136;"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,QAAQ,CAAC,EACL,KAAK,EAAE,KAAK,GACb;;AAED,yCAEG"
+	"mappings": "ACAA,AAAA,QAAQ,CAAC,EACL,KAAK,EAAE,KAAK,GACb;;AAED,yCAEG;AAEH,AAAA,UAAU,CAAA,EACR,gBAAgB,EAAE,SAAS,GAC5B;;AAED,AAAA,WAAW,CAAA,EACT,gBAAgB,EAAE,6FAA6F,EAC/G,mBAAmB,EAAE,KAAK,GAC3B"
 }

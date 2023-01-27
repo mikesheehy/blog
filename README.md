@@ -1,5 +1,5 @@
 # mikesheehy.github.io
-This was the repo for <a href="http://mikesheehy.github.io">mikesheehy.github.io</a>. This experience taught me a lot about Jekyll and Liquid, but looking forward to giving my GitHub page a new design and functionality while moving my blog elsewhere. blah blah blah
+This was the repo for <a href="http://mikesheehy.github.io">mikesheehy.github.io</a>. This experience taught me a lot about Jekyll and Liquid, but looking forward to giving my GitHub page a new design and functionality while moving my blog elsewhere.
 
 The blog was created with <a href='https://jekyllrb.com' target='_blank'>Jekyll</a> and the disign is using <a href='https://getbootstrap.com' target='_blank'>Bootstrap</a>.
 
